@@ -16,7 +16,7 @@
 
 ## Investment Platform - Backend
 
-This is the backend for an investment platform built using **NestJS** and **Ethereum smart contracts**. The platform allows users to contribute to an investment campaign, claim refunds, and release funds if the goal is met.
+This project integrates a **Solidity smart contract** with a **NestJS** backend to manage investments and track campaign status. The smart contract is deployed on the **Ethereum blockchain**, and the backend provides API endpoints to interact with it.
 
 ### Features:
 
@@ -70,6 +70,33 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+
+## Directory Structure
+
+Here’s an overview of the project directory structure:
+
+```bash
+
+your-nestjs-project/
+├── contracts/                     <-- Solidity smart contract files
+│   └── InvestmentCampaign.sol     <-- Example Solidity contract
+├── src/                           <-- NestJS backend code
+│   ├── investment/                <-- Investment-related logic
+│   │   ├── investment.service.ts  <-- Service to interact with the smart contract
+│   │   ├── investment.controller.ts  <-- Controller to manage API routes
+│   │   └── investment.module.ts   <-- Investment module (NestJS)
+│   ├── app.module.ts              <-- Main app module (NestJS)
+│   └── main.ts                    <-- Entry point for the application
+├── .env                           <-- Environment variables (not to be pushed to GitHub)
+├── hardhat.config.js              <-- Hardhat configuration for deploying the contract
+├── package.json                   <-- Project dependencies and scripts
+└── README.md                      <-- Project documentation
+
+
+```
+
+
 
 ## Deployment
 
