@@ -78,20 +78,33 @@ Here’s an overview of the project directory structure:
 
 ```bash
 
-your-nestjs-project/
+secure-stake-project/
 ├── contracts/                     <-- Solidity smart contract files
-│   └── InvestmentCampaign.sol     <-- Example Solidity contract
+│   └── InvestmentCampaign.sol     <-- Solidity contract code
 ├── src/                           <-- NestJS backend code
-│   ├── investment/                <-- Investment-related logic
-│   │   ├── investment.service.ts  <-- Service to interact with the smart contract
-│   │   ├── investment.controller.ts  <-- Controller to manage API routes
-│   │   └── investment.module.ts   <-- Investment module (NestJS)
-│   ├── app.module.ts              <-- Main app module (NestJS)
-│   └── main.ts                    <-- Entry point for the application
-├── .env                           <-- Environment variables (not to be pushed to GitHub)
-├── hardhat.config.js              <-- Hardhat configuration for deploying the contract
-├── package.json                   <-- Project dependencies and scripts
-└── README.md                      <-- Project documentation
+│   ├── investment/               
+│   │   ├── investment.service.ts  
+│   │   ├── investment.controller.ts  
+│   │   └── investment.module.ts   
+│   ├── user/                      
+│   │   ├── dto/                   
+│   │   │   └── create-user-dto.ts 
+│   │   ├── entity/                
+│   │   │   └── user.entity.ts     
+│   │   ├── user.service.ts        
+│   │   ├── user.controller.ts     
+│   │   └── user.module.ts         
+│   ├── verifyme/                  
+│   │   ├── verifyme.service.ts    
+│   │   ├── verifyme.controller.ts 
+│   │   └── verifyme.module.ts     
+│   ├── app.module.ts              
+│   └── main.ts                    
+├── .env                            
+├── hardhat.config.js              
+├── package.json                   
+└── README.md                      
+
 
 
 ```
