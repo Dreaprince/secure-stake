@@ -14,7 +14,7 @@
 
 ---
 
-## Investment Platform - Backend
+## Secure Stake Platform - Backend
 
 This project integrates a **Solidity smart contract** with a **NestJS** backend to manage investments and track campaign status. The smart contract is deployed on the **Ethereum blockchain**, and the backend provides API endpoints to interact with it.
 
