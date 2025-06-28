@@ -26,12 +26,12 @@ This is the backend for an investment platform built using **NestJS** and **Ethe
 - Admin functionality to release funds if goal is achieved.
 - Investor dashboard to track contributions and campaign status.
 
-### Assumptions:
+### Platform Assumptions and Requirements:
 
-- **KYC Verification**: Third-party services like **VerifyMe** are used for validating users' KYC information before they can contribute.
-- **Smart Contract**: The platform interacts with a deployed Ethereum smart contract that handles contributions, refunds, and fund releases.
-- **Infura**: Ethereum interaction is done through **Infura** for remote connection to Ethereum nodes.
-- **Environment Variables**: API keys, contract addresses, and sensitive information are stored securely in environment variables.
+- **KYC Verification**: The platform integrates with third-party services such as **VerifyMe** for the validation of users' KYC (Know Your Customer) information before they can participate in the investment campaign.
+- **Smart Contract**: The platform interacts with a deployed **Ethereum smart contract**  responsible for managing key processes such as handling contributions, issuing refunds, and releasing funds to the developer once the goal is reached.
+- **Infura**: **Infura** is used as the Ethereum node provider to enable the platform to interact with the Ethereum network remotely, ensuring reliable and scalable connectivity without needing to run a dedicated Ethereum node.
+- **Environment Variables**: Sensitive information such as **API keys, contract addresses**, and other configuration settings are securely stored in environment variables to protect critical data and ensure the platform's configuration is kept separate from the application code..
 
 ---
 
